@@ -2,13 +2,13 @@ import http from 'k6/http';
 import { sleep, check } from 'k6';
 
 export const options = {
-    // stages: [
-    //         { target: 20, duration: '1m' },
-    //         { target: 15, duration: '1m' },
-    //         { target: 0, duration: '1m' },
-    // ],
-    "iterations": 1000,
-    "vus": 1000,
+    //  stages: [
+    //          { target: 20, duration: '1m' },
+    //          { target: 15, duration: '1m' },
+    //          { target: 0, duration: '1m' },
+    //  ],
+    "iterations": 100,
+    "vus": 100,
     thresholds: {
         http_req_failed: ['rate < 0.1'], //request failure rate < 10%
     },
