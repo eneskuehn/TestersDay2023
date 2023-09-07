@@ -15,7 +15,7 @@ export const options = {
           vus: 1,
           duration: '20s',
         },
-      },
+    },
 };
 
 const headerParams = {
